@@ -1,0 +1,50 @@
+<!-- <mat-toolbar class="topbar-color">
+  <button mat-icon-button (click)="toggle()"><mat-icon>menu</mat-icon></button>
+  <h1 class="h1">Responsive App</h1>
+</mat-toolbar>
+<mat-divider></mat-divider> -->
+
+<mat-toolbar class="topbar-color mat-elevation-z8"  [style.paddingRight.px]="isDesktop && sidebarOpen ? 290 : 30">
+  <button mat-icon-button class="example-icon" (click)="toggle()" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Interestrelar - App</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon matBadge="23">manage_accounts</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon matBadge="23">mark_chat_unread</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon matBadge="23">notifications</mat-icon>
+  </button>
+  <a style="cursor: pointer">
+
+
+    <a mat-fab class="example-icon ms-4" style="width: 40px; height: 40px; background-color: black;">
+      <img src="assets/images/user.png" class="avatar">
+    </a>
+    <span *ngIf="isDesktop" class="ms-2" style="font-size: 15px;">Alex Carlos
+    </span>
+  </a>
+
+  <a [matMenuTriggerFor]="menuUser" class="mt-2 text-white" style="cursor: pointer">
+    <mat-icon>arrow_drop_down</mat-icon>
+  </a>
+
+
+</mat-toolbar>
+<mat-divider></mat-divider>
+
+
+
+
+<mat-menu #menuUser="matMenu">
+  <mat-divider></mat-divider>
+  <button mat-menu-item [routerLink]="['/login']">
+      <mat-icon>logout
+      </mat-icon>
+      <span>Sair</span>
+  </button>
+</mat-menu>

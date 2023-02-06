@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interestrelar.WebAPI", "Interestrelar.WebAPI\Interestrelar.WebAPI.csproj", "{63B6FE57-F0E5-41B3-BD3A-4C24B242C149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interestrelar.Application", "Interestrelar.Application\Interestrelar.Application.csproj", "{623315BF-D372-44D2-9FAF-2C85F66E6D4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interestrelar.Repository", "Interestrelar.Repository\Interestrelar.Repository.csproj", "{728BCFF7-1FEF-41DF-9803-315E86E39A35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interestrelar.Domain", "Interestrelar.Domain\Interestrelar.Domain.csproj", "{1EB390B3-CE86-4D5C-8A41-B2BBDA58864D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interestrelar.Auth", "Interestrelar.Auth\Interestrelar.Auth.csproj", "{E35C478E-76D1-4595-ACD0-AED0B58BE2CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63B6FE57-F0E5-41B3-BD3A-4C24B242C149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B6FE57-F0E5-41B3-BD3A-4C24B242C149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B6FE57-F0E5-41B3-BD3A-4C24B242C149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B6FE57-F0E5-41B3-BD3A-4C24B242C149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{623315BF-D372-44D2-9FAF-2C85F66E6D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{623315BF-D372-44D2-9FAF-2C85F66E6D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{623315BF-D372-44D2-9FAF-2C85F66E6D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{623315BF-D372-44D2-9FAF-2C85F66E6D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{728BCFF7-1FEF-41DF-9803-315E86E39A35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{728BCFF7-1FEF-41DF-9803-315E86E39A35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{728BCFF7-1FEF-41DF-9803-315E86E39A35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{728BCFF7-1FEF-41DF-9803-315E86E39A35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EB390B3-CE86-4D5C-8A41-B2BBDA58864D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB390B3-CE86-4D5C-8A41-B2BBDA58864D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB390B3-CE86-4D5C-8A41-B2BBDA58864D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB390B3-CE86-4D5C-8A41-B2BBDA58864D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E35C478E-76D1-4595-ACD0-AED0B58BE2CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E35C478E-76D1-4595-ACD0-AED0B58BE2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E35C478E-76D1-4595-ACD0-AED0B58BE2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E35C478E-76D1-4595-ACD0-AED0B58BE2CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+.topbar-color {
+  background-color: rgb(36, 36, 36);
+  position:fixed;
+  margin-top: 0px !important;
+  z-index: 999;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

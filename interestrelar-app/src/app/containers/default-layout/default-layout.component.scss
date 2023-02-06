@@ -1,0 +1,112 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+
+h1.example-app-name {
+  margin-left: 8px;
+}
+
+.example-sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+  background-color: rgb(24, 24, 24);
+}
+
+.nav-logo {
+  text-align: center;
+  margin-top: 0px;
+  //background-color: rgb(34, 35, 48);
+  padding-bottom: 3px;
+}
+
+img.logo {
+  margin-top: 3px;
+}
+
+.sidenad-left {
+  background-color: rgb(43, 43, 43);
+  border: none;
+}
+
+.example-is-mobile .example-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+
+.is-mobile-top{
+  margin-top: 56px;
+}
+
+.sidenav {
+  width: 250px;
+}
+
+.toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.app-sidenav {
+  width: 230px;
+}
+.app-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.nav {
+  .active-link {
+    //background-color: #fafafa;
+    border-left: solid 1px rgb(255,0,94);
+  }
+
+  .hover {
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-property: transform, border, background-color;
+  }
+
+  mat-list-item,
+  a {
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    // &:hover {
+    //   cursor: pointer;
+    //   //background-color: #fafafa;
+    //   border-left: solid 3px rgb(255,0,94);;
+    // }
+  }
+  mat-icon {
+    color: write;
+  }
+
+  .opened {
+    background-color: rgb(37, 37, 37);
+  }
+}

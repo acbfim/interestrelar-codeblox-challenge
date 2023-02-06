@@ -1,0 +1,61 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+
+  <mat-sidenav-container class="example-sidenav-container" autosize>
+
+
+
+    <mat-sidenav style="width: 250px;" class="sidenad-left" #sidenav [opened]="isDesktop"
+      [mode]="mobileQuery.matches ? 'over' : 'side'" [style.marginTop.px]="mobileQuery.matches ? 56 : 0"
+      [fixedInViewport]="true">
+      <div class="nav-logo">
+        <a class="" [routerLink]="['../']">
+          <img class="logo" src="/assets/images/logo.png" width="120px"></a>
+      </div>
+
+
+      <mat-divider class="mx-2"></mat-divider>
+
+      <mat-nav-list class="nav">
+        <div *ngFor="let item of menu">
+          <a mat-list-item *ngIf="item.items" routerLink="{{item.link}}" (click)="navigateTo(item.link)"
+          class=""
+            routerLinkActive="active-link">
+             <div class="d-flex">
+                <mat-icon class="me-4">{{item.icon}}</mat-icon>
+                <label class="" style="font-size: 14px;font-weight: 500;">{{item.name}}</label>
+             </div>
+          </a>
+
+
+        </div>
+      </mat-nav-list>
+
+
+
+
+
+
+    </mat-sidenav>
+
+
+
+
+
+    <mat-sidenav-content>
+      <app-default-header [sidenavValue]=sidenav></app-default-header>
+
+      <div class="" [ngClass]="!isDesktop ? '' : '' " style="padding: 15px; margin-top: 60px;">
+        <router-outlet></router-outlet>
+      </div>
+
+
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+
+
+
+
+
